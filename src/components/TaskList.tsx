@@ -32,7 +32,7 @@ export function TaskList() {
   }
 
   function handleRemoveTask(id: number) {
-    
+    setTasks((item) => (item.filter((value ) => value.id != id)))
   }
 
   return (
